@@ -1,0 +1,15 @@
+.container {
+    @apply flex flex-col w-56 h-full  items-center pb-5 relative transition-all
+}
+
+.user-img {
+    @apply w-16 h-16 mb-2 overflow-hidden flex items-center justify-center cursor-pointer hover:opacity-70 relative rounded-full transition-all;
+}
+
+.nav-options {
+    @apply flex-1 py-7 w-full flex flex-col border-t 
+}
+
+.nav-btn {
+    @apply flex gap-4 items-center text-sm transition-all  py-3 pl-5   w-full opacity-60 font-bold cursor-pointer hover:opacity-80
+}

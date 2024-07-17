@@ -2,13 +2,18 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
-     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.notion.com;"> -->
-
+    <title>Telewave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' blob: https: data:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' ws://*.web.telegram.org  wss://*.web.telegram.org;">
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon">
+    
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/renderer.ts"></script>
-   
+    <!-- <script  src="telegram/telegram.js"></script> -->
+    <script type="module" src="/src/renderer.tsx"></script>
   </body>
 </html>

@@ -1,19 +1,23 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow , nativeImage } from 'electron';
 import path from 'path';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
+ 
+
 
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 800,
+    icon  : nativeImage.createFromPath("./src/assets/favicon.ico"),
+    frame : false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      
+      devTools : process.env.ELECTRON_ENV === "dev",
     },
   });
 
@@ -23,9 +27,6 @@ const createWindow = () => {
   } else {
     mainWindow.loadFile(path.join(__dirname, `../renderer/${MAIN_WINDOW_VITE_NAME}/index.html`));
   }
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

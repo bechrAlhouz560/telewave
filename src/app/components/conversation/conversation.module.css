@@ -1,0 +1,11 @@
+.user-img {
+    @apply  w-12 h-12 overflow-hidden flex items-center justify-center cursor-pointer hover:opacity-70 relative rounded-full transition-all;
+}
+
+
+.no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 230px;
+}

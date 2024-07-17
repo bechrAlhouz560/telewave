@@ -1,0 +1,39 @@
+.message-text {
+    @apply p-1 rounded-lg text-sm text-white text-opacity-80 bg-opacity-80 transition-opacity cursor-pointer;
+    max-width: 80%;
+
+    width: fit-content;
+}
+
+.message {
+    @apply flex flex-col ;
+}
+
+.message-text:hover {
+    @apply opacity-80
+}
+
+.user-img {
+    @apply mt-auto  w-8 h-8 overflow-hidden flex items-center justify-center cursor-pointer hover:opacity-70 relative rounded-full transition-all;
+}
+
+
+.audio-msg {
+    @apply flex gap-2 p-1;
+
+    width: 250px;
+}
+
+
+.audio-thumb {
+    width: 50px;
+    height: 50px;
+
+    @apply rounded-lg relative flex items-center justify-center overflow-hidden bg-black
+}
+
+.audio-thumb img {
+
+    @apply w-full h-full object-cover opacity-60 absolute
+    
+}

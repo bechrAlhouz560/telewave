@@ -1,0 +1,8 @@
+.container {
+    @apply w-full h-full flex
+}
+
+.body
+ {
+    @apply flex-1 h-full
+ }

@@ -1,0 +1,8 @@
+.container {
+    @apply w-full h-full flex 
+}
+
+
+.chat-list {
+    @apply w-80 h-full flex flex-col
+}
